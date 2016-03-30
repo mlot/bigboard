@@ -1,0 +1,986 @@
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+BigBoard Server listening on port 3333...
+Connected to test database.
+[90mGET / [32m200 [90m3ms - 907[0m
+[90mGET /stylesheet.css [32m200 [90m3ms - 1.84kb[0m
+[90mGET /client.js [32m200 [90m1ms - 12kb[0m
+[90mGET /jquery-1.8.3.min.js [32m200 [90m168ms - 91.44kb[0m
+[90mGET /background.gif [32m200 [90m1ms - 12.71kb[0m
+[90mGET /context [32m200 [90m2ms - 88[0m
+[90mGET /data [32m200 [90m6ms - 18.19kb[0m
+[90mGET /favicon.ico [33m404 [90m1ms[0m
+Updating item: 1438679298902
+1 document(s) updated
+[90mPUT /data/1438679298902 [32m200 [90m4ms - 51[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+Deleting item:1438679298902
+[90mDELETE /data/1438679298902 [32m200 [90m1ms - 32[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+Deleting item:1360507339652
+[90mDELETE /data/1360507339652 [32m200 [90m2ms - 32[0m
+Deleting item:1360507361058
+[90mDELETE /data/1360507361058 [32m200 [90m0ms - 32[0m
+Deleting item:1360820093980
+[90mDELETE /data/1360820093980 [32m200 [90m1ms - 32[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m5ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mPUT /context/ [32m1 [90m4ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m5ms[0m
+Deleting item:1386819525090
+[90mDELETE /data/1386819525090 [32m200 [90m1ms - 32[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+Deleting item:1388108493446
+[90mDELETE /data/1388108493446 [32m200 [90m2ms - 32[0m
+Deleting item:1388108554799
+[90mDELETE /data/1388108554799 [32m200 [90m1ms - 32[0m
+Deleting item:1388109125134
+[90mDELETE /data/1388109125134 [32m200 [90m0ms - 32[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+Creating item:{"id":"1439093158010","position":{"x":"979","y":"474"},"content":"","status":"NEW"}
+Success:{"id":"1439093158010","position":{"x":"979","y":"474"},"content":"","status":"NEW","_id":"55c6d1a610a5ad9757000001"}
+[90mPOST /data [32m200 [90m3ms - 152[0m
+Updating item: 1439093158010
+1 document(s) updated
+[90mPUT /data/1439093158010 [32m200 [90m1ms - 80[0m
+[90mGET / [36m304 [90m4ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m4ms[0m
+[90mGET /stylesheet.css [36m304 [90m2ms[0m
+[90mGET /client.js [36m304 [90m0ms[0m
+[90mGET /background.gif [36m304 [90m0ms[0m
+[90mGET /context [32m200 [90m3ms - 86[0m
+[90mGET /favicon.ico [33m404 [90m1ms[0m
+[90mGET /data [32m200 [90m4ms - 3.99kb[0m
+[90mPUT /context/ [32m1 [90m6ms[0m
+Updating item: 1439093158010
+1 document(s) updated
+[90mPUT /data/1439093158010 [32m200 [90m2ms - 80[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+Updating item: 1386831556353
+1 document(s) updated
+[90mPUT /data/1386831556353 [32m200 [90m4ms - 52[0m
+Updating item: 1358944130150
+1 document(s) updated
+[90mPUT /data/1358944130150 [32m200 [90m4ms - 648[0m
+Updating item: 1386831556353
+1 document(s) updated
+[90mPUT /data/1386831556353 [32m200 [90m5ms - 52[0m
+Updating item: 1386831556353
+1 document(s) updated
+[90mPUT /data/1386831556353 [32m200 [90m5ms - 51[0m
+Updating item: 1386833185413
+1 document(s) updated
+[90mPUT /data/1386833185413 [32m200 [90m2ms - 51[0m
+Updating item: 1439093158010
+1 document(s) updated
+[90mPUT /data/1439093158010 [32m200 [90m2ms - 53[0m
+[90mGET / [36m304 [90m2ms[0m
+[90mGET /stylesheet.css [36m304 [90m2ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m1ms[0m
+[90mGET /client.js [36m304 [90m1ms[0m
+[90mGET /background.gif [36m304 [90m1ms[0m
+[90mGET /context [32m200 [90m2ms - 86[0m
+[90mGET /data [32m200 [90m5ms - 4kb[0m
+[90mGET / [32m200 [90m3ms - 907[0m
+[90mGET /stylesheet.css [32m200 [90m2ms - 1.84kb[0m
+[90mGET /client.js [32m200 [90m1ms - 12kb[0m
+[90mGET /jquery-1.8.3.min.js [32m200 [90m171ms - 91.44kb[0m
+[90mGET /background.gif [32m200 [90m1ms - 12.71kb[0m
+[90mGET /context [32m200 [90m3ms - 86[0m
+[90mGET /data [32m200 [90m4ms - 4kb[0m
+[90mGET /favicon.ico [33m404 [90m1ms[0m
+Updating item: 1439093158010
+1 document(s) updated
+[90mPUT /data/1439093158010 [32m200 [90m2ms - 80[0m
+Updating item: 1439093158010
+1 document(s) updated
+[90mPUT /data/1439093158010 [32m200 [90m2ms - 80[0m
+[90mGET / [36m304 [90m3ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m1ms[0m
+[90mGET /client.js [36m304 [90m1ms[0m
+[90mGET /stylesheet.css [36m304 [90m1ms[0m
+[90mGET /context [32m200 [90m2ms - 86[0m
+[90mGET /data [32m200 [90m4ms - 4kb[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+Updating item: 1359300564773
+1 document(s) updated
+[90mPUT /data/1359300564773 [32m200 [90m5ms - 52[0m
+Updating item: 1359300564773
+1 document(s) updated
+[90mPUT /data/1359300564773 [32m200 [90m2ms - 54[0m
+Updating item: 1358957290736
+1 document(s) updated
+[90mPUT /data/1358957290736 [32m200 [90m4ms - 50[0m
+Updating item: 1359301286885
+1 document(s) updated
+[90mPUT /data/1359301286885 [32m200 [90m5ms - 52[0m
+[90mGET / [32m200 [90m3ms - 907[0m
+[90mGET /stylesheet.css [32m200 [90m1ms - 1.84kb[0m
+[90mGET /client.js [32m200 [90m1ms - 12kb[0m
+[90mGET /jquery-1.8.3.min.js [32m200 [90m109ms - 91.44kb[0m
+[90mGET /background.gif [32m200 [90m1ms - 12.71kb[0m
+[90mGET /context [32m200 [90m3ms - 87[0m
+[90mGET /data [32m200 [90m3ms - 4kb[0m
+[90mPUT /context/ [32m1 [90m4ms[0m
+[90mPUT /context/ [32m1 [90m5ms[0m
+[90mPUT /context/ [32m1 [90m5ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m14ms[0m
+Updating item: 1386833185413
+1 document(s) updated
+[90mPUT /data/1386833185413 [32m200 [90m4ms - 53[0m
+Updating item: 1386833185413
+1 document(s) updated
+[90mPUT /data/1386833185413 [32m200 [90m4ms - 48[0m
+Updating item: 1386833185413
+1 document(s) updated
+[90mPUT /data/1386833185413 [32m200 [90m2ms - 49[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m4ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mGET / [32m200 [90m4ms - 907[0m
+[90mGET /stylesheet.css [32m200 [90m2ms - 1.84kb[0m
+[90mGET /client.js [32m200 [90m1ms - 12kb[0m
+[90mGET /jquery-1.8.3.min.js [32m200 [90m188ms - 91.44kb[0m
+[90mGET /background.gif [32m200 [90m1ms - 12.71kb[0m
+[90mGET /context [32m200 [90m3ms - 87[0m
+[90mGET /favicon.ico [33m404 [90m0ms[0m
+[90mGET /data [32m200 [90m3ms - 4kb[0m
+[90mGET / [36m304 [90m3ms[0m
+[90mGET /stylesheet.css [36m304 [90m3ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m1ms[0m
+[90mGET /client.js [36m304 [90m0ms[0m
+[90mGET /background.gif [36m304 [90m1ms[0m
+[90mGET /favicon.ico [33m404 [90m0ms[0m
+[90mGET / [32m200 [90m2ms - 907[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m2ms[0m
+[90mGET /stylesheet.css [36m304 [90m2ms[0m
+[90mGET /client.js [36m304 [90m1ms[0m
+[90mGET /background.gif [36m304 [90m1ms[0m
+[90mGET /context [32m200 [90m2ms - 87[0m
+[90mGET /data [32m200 [90m4ms - 4kb[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m5ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mPUT /context/ [32m1 [90m4ms[0m
+Creating item:{"id":"1439462633709","position":{"x":"1543","y":"635"},"content":"","status":"NEW"}
+Success:{"id":"1439462633709","position":{"x":"1543","y":"635"},"content":"","status":"NEW","_id":"55cc74ea10a5ad9757000002"}
+[90mPOST /data [32m200 [90m3ms - 153[0m
+Deleting item:1439462633709
+[90mDELETE /data/1439462633709 [32m200 [90m0ms - 32[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+Creating item:{"id":"1439462698193","position":{"x":"1459","y":"631"},"content":"","status":"NEW"}
+Success:{"id":"1439462698193","position":{"x":"1459","y":"631"},"content":"","status":"NEW","_id":"55cc752a10a5ad9757000003"}
+[90mPOST /data [32m200 [90m3ms - 153[0m
+Deleting item:1439462698193
+[90mDELETE /data/1439462698193 [32m200 [90m2ms - 32[0m
+Creating item:{"id":"1439462705897","position":{"x":"1563","y":"638"},"content":"","status":"NEW"}
+Success:{"id":"1439462705897","position":{"x":"1563","y":"638"},"content":"","status":"NEW","_id":"55cc753210a5ad9757000004"}
+[90mPOST /data [32m200 [90m3ms - 153[0m
+Deleting item:1439462705897
+[90mDELETE /data/1439462705897 [32m200 [90m1ms - 32[0m
+Creating item:{"id":"1439462741985","position":{"x":"1106","y":"533"},"content":"","status":"NEW"}
+Success:{"id":"1439462741985","position":{"x":"1106","y":"533"},"content":"","status":"NEW","_id":"55cc755610a5ad9757000005"}
+[90mPOST /data [32m200 [90m3ms - 153[0m
+Updating item: 1439462741985
+1 document(s) updated
+[90mPUT /data/1439462741985 [32m200 [90m2ms - 412[0m
+Updating item: 1439462741985
+1 document(s) updated
+[90mPUT /data/1439462741985 [32m200 [90m2ms - 53[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+Updating item: 1439462741985
+1 document(s) updated
+[90mPUT /data/1439462741985 [32m200 [90m2ms - 52[0m
+[90mPUT /context/ [32m1 [90m4ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+Updating item: 1439462741985
+1 document(s) updated
+[90mPUT /data/1439462741985 [32m200 [90m3ms - 53[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mGET / [36m304 [90m2ms[0m
+[90mGET /client.js [36m304 [90m2ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m1ms[0m
+[90mGET /stylesheet.css [36m304 [90m1ms[0m
+[90mGET /context [32m200 [90m3ms - 87[0m
+[90mGET /data [32m200 [90m4ms - 4.55kb[0m
+[90mGET /background.gif [36m304 [90m0ms[0m
+[90mPUT /context/ [32m1 [90m4ms[0m
+[90mPUT /context/ [32m1 [90m4ms[0m
+Creating item:{"id":"1439462819735","position":{"x":"973","y":"909"},"content":"","status":"NEW"}
+Success:{"id":"1439462819735","position":{"x":"973","y":"909"},"content":"","status":"NEW","_id":"55cc75a410a5ad9757000006"}
+[90mPOST /data [32m200 [90m4ms - 152[0m
+Updating item: 1439462819735
+1 document(s) updated
+[90mPUT /data/1439462819735 [32m200 [90m2ms - 595[0m
+Updating item: 1439462819735
+1 document(s) updated
+[90mPUT /data/1439462819735 [32m200 [90m4ms - 53[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+Creating item:{"id":"1439462864344","position":{"x":"871","y":"1426"},"content":"","status":"NEW"}
+Success:{"id":"1439462864344","position":{"x":"871","y":"1426"},"content":"","status":"NEW","_id":"55cc75d010a5ad9757000007"}
+[90mPOST /data [32m200 [90m4ms - 153[0m
+Updating item: 1439462864344
+1 document(s) updated
+[90mPUT /data/1439462864344 [32m200 [90m526ms - 2.82kb[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+Updating item: 1439462864344
+1 document(s) updated
+[90mPUT /data/1439462864344 [32m200 [90m2ms - 52[0m
+[90mPUT /context/ [32m1 [90m4ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mGET / [36m304 [90m3ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m0ms[0m
+[90mGET /client.js [36m304 [90m0ms[0m
+[90mGET /stylesheet.css [36m304 [90m0ms[0m
+[90mGET /background.gif [36m304 [90m1ms[0m
+[90mGET /context [32m200 [90m1ms - 86[0m
+[90mGET /data [32m200 [90m2ms - 8.25kb[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+Updating item: 1439462741985
+1 document(s) updated
+[90mPUT /data/1439462741985 [32m200 [90m3ms - 51[0m
+Updating item: 1439462819735
+1 document(s) updated
+[90mPUT /data/1439462819735 [32m200 [90m2ms - 51[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+Updating item: 1439462864344
+1 document(s) updated
+[90mPUT /data/1439462864344 [32m200 [90m1ms - 51[0m
+Updating item: 1439462864344
+1 document(s) updated
+[90mPUT /data/1439462864344 [32m200 [90m1327ms - 2.82kb[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+Creating item:{"id":"1439463058723","position":{"x":"1936","y":"334"},"content":"","status":"NEW"}
+Success:{"id":"1439463058723","position":{"x":"1936","y":"334"},"content":"","status":"NEW","_id":"55cc769310a5ad9757000008"}
+[90mPOST /data [32m200 [90m3ms - 153[0m
+Updating item: 1439463058723
+1 document(s) updated
+[90mPUT /data/1439463058723 [32m200 [90m3ms - 1.97kb[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+Deleting item:1439463058723
+[90mDELETE /data/1439463058723 [32m200 [90m1ms - 32[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mGET /stylesheet.css [36m304 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+Creating item:{"id":"1439463192956","position":{"x":"1587","y":"181"},"content":"","status":"NEW"}
+Success:{"id":"1439463192956","position":{"x":"1587","y":"181"},"content":"","status":"NEW","_id":"55cc771910a5ad9757000009"}
+[90mPOST /data [32m200 [90m4ms - 153[0m
+Updating item: 1439463192956
+1 document(s) updated
+[90mPUT /data/1439463192956 [32m200 [90m4ms - 1.82kb[0m
+[90mGET / [36m304 [90m3ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m2ms[0m
+[90mGET /stylesheet.css [36m304 [90m0ms[0m
+[90mGET /client.js [36m304 [90m1ms[0m
+[90mGET /background.gif [36m304 [90m1ms[0m
+[90mGET /context [32m200 [90m2ms - 86[0m
+[90mGET /data [32m200 [90m3ms - 10.22kb[0m
+[90mGET /stylesheet.css [36m304 [90m0ms[0m
+Deleting item:1439463192956
+[90mDELETE /data/1439463192956 [32m200 [90m1ms - 32[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+Deleting item:1439462741985
+[90mDELETE /data/1439462741985 [32m200 [90m2ms - 32[0m
+Deleting item:1439462819735
+[90mDELETE /data/1439462819735 [32m200 [90m1ms - 32[0m
+Deleting item:1439462864344
+[90mDELETE /data/1439462864344 [32m200 [90m0ms - 32[0m
+Creating item:{"id":"1439464620106","position":{"x":"-139","y":"731"},"content":"","status":"NEW"}
+Success:{"id":"1439464620106","position":{"x":"-139","y":"731"},"content":"","status":"NEW","_id":"55cc7cac10a5ad975700000a"}
+[90mPOST /data [32m200 [90m3ms - 153[0m
+Deleting item:1439464620106
+[90mDELETE /data/1439464620106 [32m200 [90m1ms - 32[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+Updating item: 1439464620106
+0 document(s) updated
+[90mPUT /data/1439464620106 [32m200 [90m6104ms - 637.14kb[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mGET / [36m304 [90m3ms[0m
+[90mGET /stylesheet.css [36m304 [90m1ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m1ms[0m
+[90mGET /client.js [36m304 [90m0ms[0m
+[90mGET /context [32m200 [90m2ms - 88[0m
+[90mGET /data [32m200 [90m2ms - 4kb[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mGET / [36m304 [90m1ms[0m
+[90mGET /stylesheet.css [36m304 [90m1ms[0m
+[90mGET /client.js [36m304 [90m0ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m1ms[0m
+[90mGET /context [32m200 [90m1ms - 87[0m
+[90mGET /data [36m304 [90m2ms[0m
+[90mGET / [32m200 [90m3ms - 907[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m4ms[0m
+[90mGET /stylesheet.css [32m200 [90m4ms - 1.84kb[0m
+[90mGET /client.js [36m304 [90m3ms[0m
+[90mGET /background.gif [32m200 [90m1ms - 12.71kb[0m
+[90mGET /context [32m200 [90m3ms - 87[0m
+[90mGET /data [32m200 [90m2ms - 4kb[0m
+[90mGET /favicon.ico [33m404 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mGET / [36m304 [90m2ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m4ms[0m
+[90mGET /stylesheet.css [36m304 [90m3ms[0m
+[90mGET /client.js [36m304 [90m2ms[0m
+[90mGET /background.gif [36m304 [90m0ms[0m
+[90mGET /context [32m200 [90m2ms - 88[0m
+[90mGET /data [36m304 [90m4ms[0m
+Creating item:{"id":"1439609734178","position":{"x":"677","y":"543"},"content":"","status":"NEW"}
+Success:{"id":"1439609734178","position":{"x":"677","y":"543"},"content":"","status":"NEW","_id":"55ceb38610a5ad975700000b"}
+[90mPOST /data [32m200 [90m4ms - 152[0m
+Updating item: 1439609734178
+1 document(s) updated
+[90mPUT /data/1439609734178 [32m200 [90m2ms - 69[0m
+[90mGET / [36m304 [90m1ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m1ms[0m
+[90mGET /stylesheet.css [36m304 [90m1ms[0m
+[90mGET /client.js [36m304 [90m1ms[0m
+[90mGET /background.gif [36m304 [90m0ms[0m
+[90mGET /context [32m200 [90m1ms - 88[0m
+[90mGET /favicon.ico [33m404 [90m1ms[0m
+[90mGET /data [32m200 [90m1ms - 4.22kb[0m
+Updating item: 1439609734178
+1 document(s) updated
+[90mPUT /data/1439609734178 [32m200 [90m4ms - 69[0m
+[90mPUT /context/ [32m1 [90m4ms[0m
+Creating item:{"id":"1439610182062","position":{"x":"546","y":"739"},"content":"","status":"NEW"}
+Success:{"id":"1439610182062","position":{"x":"546","y":"739"},"content":"","status":"NEW","_id":"55ceb54610a5ad975700000c"}
+[90mPOST /data [32m200 [90m5ms - 152[0m
+Updating item: 1439610182062
+1 document(s) updated
+[90mPUT /data/1439610182062 [32m200 [90m2ms - 317[0m
+[90mGET / [36m304 [90m2ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m1ms[0m
+[90mGET /stylesheet.css [36m304 [90m0ms[0m
+[90mGET /client.js [36m304 [90m1ms[0m
+[90mGET /background.gif [36m304 [90m1ms[0m
+[90mGET /context [32m200 [90m3ms - 88[0m
+[90mGET /data [32m200 [90m5ms - 4.68kb[0m
+Updating item: 1439610182062
+1 document(s) updated
+[90mPUT /data/1439610182062 [32m200 [90m2ms - 317[0m
+Updating item: 1439610182062
+1 document(s) updated
+[90mPUT /data/1439610182062 [32m200 [90m5ms - 440[0m
+[90mGET / [36m304 [90m1ms[0m
+[90mGET /stylesheet.css [36m304 [90m1ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m1ms[0m
+[90mGET /client.js [36m304 [90m1ms[0m
+[90mGET /context [32m200 [90m3ms - 88[0m
+[90mGET /data [32m200 [90m2ms - 4.8kb[0m
+Updating item: 1439610182062
+1 document(s) updated
+[90mPUT /data/1439610182062 [32m200 [90m2ms - 440[0m
+Creating item:{"id":"1439612041515","position":{"x":"106","y":"798"},"content":"","status":"NEW"}
+Success:{"id":"1439612041515","position":{"x":"106","y":"798"},"content":"","status":"NEW","_id":"55cebc8910a5ad975700000d"}
+[90mPOST /data [32m200 [90m5ms - 152[0m
+Updating item: 1439612041515
+1 document(s) updated
+[90mPUT /data/1439612041515 [32m200 [90m4ms - 71[0m
+[90mGET / [36m304 [90m3ms[0m
+[90mGET /stylesheet.css [36m304 [90m1ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m0ms[0m
+[90mGET /client.js [36m304 [90m0ms[0m
+[90mGET /context [32m200 [90m2ms - 88[0m
+[90mGET /data [32m200 [90m2ms - 5.02kb[0m
+Updating item: 1439612041515
+1 document(s) updated
+[90mPUT /data/1439612041515 [32m200 [90m3ms - 71[0m
+Deleting item:1439610182062
+[90mDELETE /data/1439610182062 [32m200 [90m1ms - 32[0m
+Deleting item:1439612041515
+[90mDELETE /data/1439612041515 [32m200 [90m1ms - 32[0m
+Deleting item:1439609734178
+[90mDELETE /data/1439609734178 [32m200 [90m0ms - 32[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+Creating item:{"id":"1439631866598","position":{"x":"675","y":"502"},"content":"","status":"NEW"}
+Success:{"id":"1439631866598","position":{"x":"675","y":"502"},"content":"","status":"NEW","_id":"55cf09fa10a5ad975700000e"}
+[90mPOST /data [32m200 [90m4ms - 152[0m
+Updating item: 1439631866598
+1 document(s) updated
+[90mPUT /data/1439631866598 [32m200 [90m2ms - 64[0m
+[90mGET / [36m304 [90m2ms[0m
+[90mGET /stylesheet.css [36m304 [90m1ms[0m
+[90mGET /client.js [36m304 [90m1ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m0ms[0m
+[90mGET /context [32m200 [90m2ms - 87[0m
+[90mGET /data [32m200 [90m3ms - 4.21kb[0m
+Updating item: 1439631866598
+1 document(s) updated
+[90mPUT /data/1439631866598 [32m200 [90m2ms - 64[0m
+[90mGET / [36m304 [90m3ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m1ms[0m
+[90mGET /stylesheet.css [36m304 [90m0ms[0m
+[90mGET /client.js [36m304 [90m1ms[0m
+[90mGET /background.gif [36m304 [90m2ms[0m
+[90mGET /context [32m200 [90m3ms - 87[0m
+[90mGET /favicon.ico [33m404 [90m1ms[0m
+[90mGET /data [32m200 [90m2ms - 4.21kb[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+Creating item:{"id":"1439736916021","position":{"x":"1772","y":"143"},"content":"","status":"NEW"}
+Success:{"id":"1439736916021","position":{"x":"1772","y":"143"},"content":"","status":"NEW","_id":"55d0a45410a5ad975700000f"}
+[90mPOST /data [32m200 [90m2ms - 153[0m
+Updating item: 1439736916021
+1 document(s) updated
+[90mPUT /data/1439736916021 [32m200 [90m3ms - 137[0m
+[90mGET / [36m304 [90m3ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m2ms[0m
+[90mGET /stylesheet.css [36m304 [90m1ms[0m
+[90mGET /client.js [36m304 [90m0ms[0m
+[90mGET /background.gif [36m304 [90m1ms[0m
+[90mGET /context [32m200 [90m2ms - 88[0m
+[90mGET /data [32m200 [90m4ms - 4.5kb[0m
+[90mGET /data [32m200 [90m4ms - 4.5kb[0m
+[90mGET /favicon.ico [33m404 [90m1ms[0m
+[90mGET / [36m304 [90m2ms[0m
+[90mGET /stylesheet.css [32m200 [90m3ms - 1.84kb[0m
+[90mGET /client.js [32m200 [90m0ms - 12kb[0m
+[90mGET /jquery-1.8.3.min.js [32m200 [90m162ms - 91.44kb[0m
+[90mGET /background.gif [32m200 [90m1ms - 12.71kb[0m
+[90mGET /context [32m200 [90m2ms - 88[0m
+[90mGET /data [32m200 [90m3ms - 4.5kb[0m
+Creating item:{"id":"1439948912367","position":{"x":"1790","y":"302"},"content":"","status":"NEW"}
+Success:{"id":"1439948912367","position":{"x":"1790","y":"302"},"content":"","status":"NEW","_id":"55d3e07010a5ad9757000010"}
+[90mPOST /data [32m200 [90m2ms - 153[0m
+Updating item: 1439948912367
+1 document(s) updated
+[90mPUT /data/1439948912367 [32m200 [90m2ms - 111[0m
+[90mGET / [36m304 [90m2ms[0m
+[90mGET /stylesheet.css [36m304 [90m1ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m1ms[0m
+[90mGET /client.js [36m304 [90m0ms[0m
+[90mGET /background.gif [36m304 [90m0ms[0m
+[90mGET /context [32m200 [90m3ms - 88[0m
+[90mGET /favicon.ico [33m404 [90m1ms[0m
+[90mGET /data [32m200 [90m3ms - 4.76kb[0m
+Updating item: 1439948912367
+1 document(s) updated
+[90mPUT /data/1439948912367 [32m200 [90m2ms - 111[0m
+Deleting item:1439948912367
+[90mDELETE /data/1439948912367 [32m200 [90m2ms - 32[0m
+Deleting item:1439736916021
+[90mDELETE /data/1439736916021 [32m200 [90m2ms - 32[0m
+[90mPUT /context/ [32m1 [90m5ms[0m
+[90mGET / [36m304 [90m3ms[0m
+[90mGET /stylesheet.css [36m304 [90m1ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m2ms[0m
+[90mGET /client.js [36m304 [90m1ms[0m
+[90mGET /context [32m200 [90m2ms - 88[0m
+[90mGET /data [32m200 [90m2ms - 4.21kb[0m
+[90mGET / [36m304 [90m3ms[0m
+[90mGET /client.js [36m304 [90m1ms[0m
+[90mGET /stylesheet.css [36m304 [90m2ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m1ms[0m
+[90mGET /context [32m200 [90m2ms - 88[0m
+[90mGET /data [36m304 [90m3ms[0m
+Creating item:{"id":"1440081534699","position":{"x":"944","y":"421"},"content":"","status":"NEW"}
+Success:{"id":"1440081534699","position":{"x":"944","y":"421"},"content":"","status":"NEW","_id":"55d5e67e10a5ad9757000011"}
+[90mPOST /data [32m200 [90m3ms - 152[0m
+Updating item: 1440081534699
+1 document(s) updated
+[90mPUT /data/1440081534699 [32m200 [90m2ms - 83[0m
+[90mGET / [36m304 [90m3ms[0m
+[90mGET /stylesheet.css [36m304 [90m1ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m0ms[0m
+[90mGET /client.js [36m304 [90m1ms[0m
+[90mGET /background.gif [36m304 [90m0ms[0m
+[90mGET /context [32m200 [90m2ms - 88[0m
+[90mGET /favicon.ico [33m404 [90m1ms[0m
+[90mGET /data [32m200 [90m5ms - 4.44kb[0m
+[90mPUT /context/ [32m1 [90m5ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m4ms[0m
+[90mGET / [36m304 [90m3ms[0m
+[90mGET /stylesheet.css [36m304 [90m2ms[0m
+[90mGET /client.js [36m304 [90m0ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m1ms[0m
+[90mGET /context [32m200 [90m2ms - 88[0m
+[90mGET /data [36m304 [90m4ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+Updating item: 1386833185413
+1 document(s) updated
+[90mPUT /data/1386833185413 [32m200 [90m4ms - 50[0m
+Updating item: 1440081534699
+1 document(s) updated
+[90mPUT /data/1440081534699 [32m200 [90m3ms - 83[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mGET /favicon.ico [33m404 [90m3ms[0m
+[90mGET /data [32m200 [90m6ms - 4.44kb[0m
+[90mGET / [36m304 [90m2ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m2ms[0m
+[90mGET /stylesheet.css [36m304 [90m1ms[0m
+[90mGET /client.js [36m304 [90m1ms[0m
+[90mGET /background.gif [36m304 [90m0ms[0m
+[90mGET /context [32m200 [90m2ms - 85[0m
+[90mGET /data [36m304 [90m3ms[0m
+[90mGET / [32m200 [90m3ms - 907[0m
+[90mGET /stylesheet.css [32m200 [90m1ms - 1.84kb[0m
+[90mGET /client.js [32m200 [90m1ms - 12kb[0m
+[90mGET /jquery-1.8.3.min.js [32m200 [90m176ms - 91.44kb[0m
+[90mGET /background.gif [32m200 [90m1ms - 12.71kb[0m
+[90mGET /context [32m200 [90m2ms - 85[0m
+[90mGET /data [32m200 [90m4ms - 4.44kb[0m
+Creating item:{"id":"1441112883733","position":{"x":"674","y":"664"},"content":"","status":"NEW"}
+Success:{"id":"1441112883733","position":{"x":"674","y":"664"},"content":"","status":"NEW","_id":"55e5a33310a5ad9757000012"}
+[90mPOST /data [32m200 [90m3ms - 152[0m
+Updating item: 1441112883733
+1 document(s) updated
+[90mPUT /data/1441112883733 [32m200 [90m3ms - 425[0m
+Updating item: 1441112883733
+1 document(s) updated
+[90mPUT /data/1441112883733 [32m200 [90m2ms - 478[0m
+Updating item: 1441112883733
+1 document(s) updated
+[90mPUT /data/1441112883733 [32m200 [90m3ms - 513[0m
+Creating item:{"id":"1441113735479","position":{"x":"1204","y":"592"},"content":"","status":"NEW"}
+Success:{"id":"1441113735479","position":{"x":"1204","y":"592"},"content":"","status":"NEW","_id":"55e5a68810a5ad9757000013"}
+[90mPOST /data [32m200 [90m4ms - 153[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m3ms - 237[0m
+[90mPUT /context/ [32m1 [90m4ms[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m4ms - 395[0m
+Updating item: 1441112883733
+1 document(s) updated
+[90mPUT /data/1441112883733 [32m200 [90m3ms - 597[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m4ms - 600[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m3ms - 617[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+Updating item: 1441112883733
+1 document(s) updated
+[90mPUT /data/1441112883733 [32m200 [90m6ms - 602[0m
+[90mPUT /context/ [32m1 [90m4ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m2ms - 53[0m
+Updating item: 1441112883733
+1 document(s) updated
+[90mPUT /data/1441112883733 [32m200 [90m2ms - 51[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m2ms - 52[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+Updating item: 1441112883733
+1 document(s) updated
+[90mPUT /data/1441112883733 [32m200 [90m3ms - 601[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m2ms - 682[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m4ms - 685[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m2ms - 672[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m3ms - 50[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m3ms - 672[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m4ms - 672[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m2ms - 50[0m
+Updating item: 1441112883733
+1 document(s) updated
+[90mPUT /data/1441112883733 [32m200 [90m2ms - 566[0m
+Updating item: 1441112883733
+1 document(s) updated
+[90mPUT /data/1441112883733 [32m200 [90m3ms - 572[0m
+Updating item: 1441112883733
+1 document(s) updated
+[90mPUT /data/1441112883733 [32m200 [90m2ms - 572[0m
+Updating item: 1441112883733
+1 document(s) updated
+[90mPUT /data/1441112883733 [32m200 [90m4ms - 50[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m3ms - 51[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m3ms - 663[0m
+Updating item: 1441112883733
+1 document(s) updated
+[90mPUT /data/1441112883733 [32m200 [90m2ms - 572[0m
+[90mPUT /context/ [32m1 [90m4ms[0m
+[90mPUT /context/ [32m1 [90m5ms[0m
+[90mGET / [32m200 [90m3ms - 907[0m
+[90mGET /stylesheet.css [32m200 [90m2ms - 1.84kb[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m1ms[0m
+[90mGET /client.js [36m304 [90m0ms[0m
+[90mGET /background.gif [32m200 [90m1ms - 12.71kb[0m
+[90mGET /context [32m200 [90m2ms - 87[0m
+[90mGET /data [32m200 [90m3ms - 5.95kb[0m
+[90mGET /favicon.ico [33m404 [90m0ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+Updating item: 1441112883733
+1 document(s) updated
+[90mPUT /data/1441112883733 [32m200 [90m2ms - 51[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+Updating item: 1441112883733
+1 document(s) updated
+[90mPUT /data/1441112883733 [32m200 [90m3ms - 51[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m4ms - 50[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m4ms - 698[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m6ms - 698[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m3ms - 735[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m2ms - 735[0m
+Updating item: 1441112883733
+1 document(s) updated
+[90mPUT /data/1441112883733 [32m200 [90m2ms - 578[0m
+Updating item: 1441112883733
+1 document(s) updated
+[90mPUT /data/1441112883733 [32m200 [90m4ms - 589[0m
+[90mPUT /context/ [32m1 [90m4ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m4ms[0m
+[90mPUT /context/ [32m1 [90m4ms[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m4ms - 735[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m3ms - 759[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m3ms - 765[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m4ms - 765[0m
+Updating item: 1441112883733
+1 document(s) updated
+[90mPUT /data/1441112883733 [32m200 [90m2ms - 590[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m3ms - 765[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m3ms - 765[0m
+Updating item: 1441112883733
+1 document(s) updated
+[90mPUT /data/1441112883733 [32m200 [90m2ms - 590[0m
+Updating item: 1441113735479
+1 document(s) updated
+[90mPUT /data/1441113735479 [32m200 [90m3ms - 765[0m
+Updating item: 1441112883733
+1 document(s) updated
+[90mPUT /data/1441112883733 [32m200 [90m3ms - 590[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+Creating item:{"id":"1441197302262","position":{"x":"1940","y":"881"},"content":"","status":"NEW"}
+[90mPUT /context/ [32m1 [90m7ms[0m
+Success:{"id":"1441197302262","position":{"x":"1940","y":"881"},"content":"","status":"NEW","_id":"55e6ecf610a5ad9757000014"}
+[90mPOST /data [32m200 [90m5ms - 153[0m
+Deleting item:1441197302262
+[90mDELETE /data/1441197302262 [32m200 [90m1ms - 32[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mPUT /context/ [32m1 [90m5ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mPUT /context/ [32m1 [90m4ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m5ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+Updating item: 1439631866598
+1 document(s) updated
+[90mPUT /data/1439631866598 [32m200 [90m2ms - 53[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m4ms[0m
+Deleting item:1441113735479
+[90mDELETE /data/1441113735479 [32m200 [90m1ms - 32[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+Deleting item:1441112883733
+[90mDELETE /data/1441112883733 [32m200 [90m1ms - 32[0m
+[90mPUT /context/ [32m1 [90m1ms[0m
+Creating item:{"id":"1441363638544","position":{"x":"697","y":"626"},"content":"","status":"NEW"}
+Success:{"id":"1441363638544","position":{"x":"697","y":"626"},"content":"","status":"NEW","_id":"55e976b610a5ad9757000015"}
+[90mPOST /data [32m200 [90m2ms - 152[0m
+Updating item: 1441363638544
+1 document(s) updated
+[90mPUT /data/1441363638544 [32m200 [90m1ms - 43[0m
+Updating item: 1441363638544
+1 document(s) updated
+[90mPUT /data/1441363638544 [32m200 [90m3ms - 78[0m
+[90mPUT /context/ [32m1 [90m4ms[0m
+[90mPUT /context/ [32m1 [90m4ms[0m
+[90mGET / [32m200 [90m3ms - 907[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m1ms[0m
+[90mGET /stylesheet.css [36m304 [90m0ms[0m
+[90mGET /client.js [36m304 [90m1ms[0m
+[90mGET /background.gif [36m304 [90m1ms[0m
+[90mGET /context [32m200 [90m2ms - 87[0m
+[90mGET /data [32m200 [90m4ms - 4.67kb[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mGET / [32m200 [90m3ms - 907[0m
+[90mGET /stylesheet.css [32m200 [90m2ms - 1.84kb[0m
+[90mGET /client.js [32m200 [90m1ms - 12kb[0m
+[90mGET /jquery-1.8.3.min.js [32m200 [90m249ms - 91.44kb[0m
+[90mGET /background.gif [32m200 [90m1ms - 12.71kb[0m
+[90mGET /context [32m200 [90m3ms - 85[0m
+[90mGET /data [32m200 [90m3ms - 4.67kb[0m
+[90mGET /favicon.ico [33m404 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+Updating item: 1439093158010
+1 document(s) updated
+[90mPUT /data/1439093158010 [32m200 [90m3ms - 80[0m
+[90mPUT /context/ [32m1 [90m5ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+[90mGET / [32m200 [90m2ms - 907[0m
+[90mGET /stylesheet.css [32m200 [90m2ms - 1.84kb[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m1ms[0m
+[90mGET /client.js [36m304 [90m1ms[0m
+[90mGET /background.gif [32m200 [90m2ms - 12.71kb[0m
+[90mGET /context [32m200 [90m2ms - 88[0m
+[90mGET /data [32m200 [90m3ms - 4.67kb[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mGET / [36m304 [90m2ms[0m
+[90mGET /stylesheet.css [36m304 [90m1ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m1ms[0m
+[90mGET /client.js [36m304 [90m1ms[0m
+[90mGET /context [32m200 [90m1ms - 87[0m
+[90mGET /data [36m304 [90m2ms[0m
+[90mGET / [32m200 [90m3ms - 907[0m
+[90mGET /stylesheet.css [32m200 [90m1ms - 1.84kb[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m1ms[0m
+[90mGET /client.js [36m304 [90m1ms[0m
+[90mGET /background.gif [32m200 [90m1ms - 12.71kb[0m
+[90mGET /context [32m200 [90m2ms - 87[0m
+[90mGET /data [32m200 [90m4ms - 4.67kb[0m
+[90mGET /favicon.ico [33m404 [90m0ms[0m
+Creating item:{"id":"1443014420374","position":{"x":"1025","y":"213"},"content":"","status":"NEW"}
+Success:{"id":"1443014420374","position":{"x":"1025","y":"213"},"content":"","status":"NEW","_id":"5602a71410a5ad9757000016"}
+[90mPOST /data [32m200 [90m3ms - 153[0m
+Updating item: 1443014420374
+1 document(s) updated
+[90mPUT /data/1443014420374 [32m200 [90m2ms - 171[0m
+[90mGET / [36m304 [90m0ms[0m
+[90mGET /stylesheet.css [36m304 [90m1ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m0ms[0m
+[90mGET /client.js [36m304 [90m0ms[0m
+[90mGET /background.gif [36m304 [90m1ms[0m
+[90mGET /context [32m200 [90m2ms - 87[0m
+[90mGET /favicon.ico [33m404 [90m1ms[0m
+[90mGET /data [32m200 [90m3ms - 4.99kb[0m
+Updating item: 1443014420374
+1 document(s) updated
+[90mPUT /data/1443014420374 [32m200 [90m2ms - 171[0m
+[90mPUT /context/ [32m1 [90m4ms[0m
+[90mGET / [32m200 [90m2ms - 907[0m
+[90mGET /stylesheet.css [36m304 [90m2ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m1ms[0m
+[90mGET /client.js [36m304 [90m0ms[0m
+[90mGET /background.gif [36m304 [90m1ms[0m
+[90mGET /context [32m200 [90m2ms - 89[0m
+[90mGET /data [36m304 [90m4ms[0m
+[90mGET /data [36m304 [90m6ms[0m
+[90mGET /favicon.ico [33m404 [90m1ms[0m
+[90mGET / [32m200 [90m3ms - 907[0m
+[90mGET /stylesheet.css [32m200 [90m2ms - 1.84kb[0m
+[90mGET /client.js [32m200 [90m1ms - 12kb[0m
+[90mGET /jquery-1.8.3.min.js [32m200 [90m200ms - 91.44kb[0m
+[90mGET /background.gif [32m200 [90m2ms - 12.71kb[0m
+[90mGET /context [32m200 [90m3ms - 89[0m
+[90mGET /data [32m200 [90m4ms - 4.99kb[0m
+[90mGET /favicon.ico [33m404 [90m1ms[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+Updating item: 1439093158010
+1 document(s) updated
+[90mPUT /data/1439093158010 [32m200 [90m3ms - 80[0m
+[90mPUT /context/ [32m1 [90m3ms[0m
+[90mGET / [36m304 [90m2ms[0m
+[90mGET /client.js [36m304 [90m2ms[0m
+[90mGET /stylesheet.css [36m304 [90m2ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m1ms[0m
+[90mGET /background.gif [36m304 [90m0ms[0m
+[90mGET /context [32m200 [90m2ms - 87[0m
+[90mGET /favicon.ico [33m404 [90m0ms[0m
+[90mGET /data [36m304 [90m3ms[0m
+Creating item:{"id":"1444223709827","position":{"x":"1093","y":"589"},"content":"","status":"NEW"}
+Success:{"id":"1444223709827","position":{"x":"1093","y":"589"},"content":"","status":"NEW","_id":"56151add10a5ad9757000017"}
+[90mPOST /data [32m200 [90m3ms - 153[0m
+Updating item: 1444223709827
+1 document(s) updated
+[90mPUT /data/1444223709827 [32m200 [90m1ms - 327[0m
+[90mGET / [32m200 [90m3ms - 907[0m
+[90mGET /stylesheet.css [32m200 [90m1ms - 1.84kb[0m
+[90mGET /client.js [32m200 [90m1ms - 12kb[0m
+[90mGET /jquery-1.8.3.min.js [32m200 [90m163ms - 91.44kb[0m
+[90mGET /background.gif [32m200 [90m1ms - 12.71kb[0m
+[90mGET /context [32m200 [90m2ms - 87[0m
+[90mGET /data [32m200 [90m3ms - 5.46kb[0m
+[90mGET /favicon.ico [33m404 [90m1ms[0m
+Creating item:{"id":"1444697715607","position":{"x":"1063","y":"807"},"content":"","status":"NEW"}
+Success:{"id":"1444697715607","position":{"x":"1063","y":"807"},"content":"","status":"NEW","_id":"561c567310a5ad9757000018"}
+[90mPOST /data [32m200 [90m3ms - 153[0m
+Updating item: 1444697715607
+1 document(s) updated
+[90mPUT /data/1444697715607 [32m200 [90m2ms - 57[0m
+[90mGET / [32m200 [90m3ms - 907[0m
+[90mGET /stylesheet.css [32m200 [90m2ms - 1.84kb[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m1ms[0m
+[90mGET /client.js [36m304 [90m1ms[0m
+[90mGET /background.gif [32m200 [90m0ms - 12.71kb[0m
+[90mGET /context [32m200 [90m2ms - 87[0m
+[90mGET /data [32m200 [90m3ms - 5.67kb[0m
+[90mGET /favicon.ico [33m404 [90m0ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+Updating item: 1444697715607
+1 document(s) updated
+[90mPUT /data/1444697715607 [32m200 [90m2ms - 57[0m
+Updating item: 1444697715607
+1 document(s) updated
+[90mPUT /data/1444697715607 [32m200 [90m2ms - 57[0m
+[90mGET / [32m200 [90m3ms - 907[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m1ms[0m
+[90mGET /client.js [36m304 [90m1ms[0m
+[90mGET /stylesheet.css [32m200 [90m2ms - 1.84kb[0m
+[90mGET /background.gif [32m200 [90m1ms - 12.71kb[0m
+[90mGET /context [32m200 [90m3ms - 87[0m
+[90mGET /data [32m200 [90m4ms - 5.67kb[0m
+[90mGET /favicon.ico [33m404 [90m0ms[0m
+[90mPUT /context/ [32m1 [90m2ms[0m
+
+node.js:201
+        throw e; // process.nextTick error, or 'error' event on first tick
+              ^
+Error: Cannot find module '/root/server.js'
+    at Function._resolveFilename (module.js:332:11)
+    at Function._load (module.js:279:25)
+    at Array.0 (module.js:479:10)
+    at EventEmitter._tickCallback (node.js:192:41)
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+BigBoard Server listening on port 3333...
+Connected to test database.
+[90mGET / [32m200 [90m6ms - 907[0m
+[90mGET /client.js [36m304 [90m2ms[0m
+[90mGET /jquery-1.8.3.min.js [36m304 [90m1ms[0m
+[90mGET /stylesheet.css [36m304 [90m1ms[0m
+[90mGET /background.gif [36m304 [90m0ms[0m
+[90mGET /context [32m200 [90m68ms - 87[0m
+[90mGET /data [36m304 [90m7ms[0m
